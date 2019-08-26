@@ -5,15 +5,52 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/chat_header">
+
+        <ImageButton
+            android:id="@+id/chat_search_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/chat_menu_button"
+            android:layout_toRightOf="@+id/chat_search_button"
+            android:gravity="center"
+            android:text="Chat"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/chat_menu_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"/>
+
+    </RelativeLayout>
+
     <com.stfalcon.chatkit.dialogs.DialogsList
         android:id="@+id/dialogsList"
         android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
         android:layout_height="match_parent"
         app:dialogDividerLeftPadding="0dp"
         app:dialogMessageTextSize="17sp"
         app:dialogTitleTextStyle="bold"
         app:dialogUnreadBubbleBackgroundColor="@color/red"
         app:dialogUnreadItemBackground="@color/gray_transparent"
-        app:dialogUnreadTitleTextStyle="bold"/>
+        app:dialogUnreadTitleTextStyle="bold" />
 
 </RelativeLayout>

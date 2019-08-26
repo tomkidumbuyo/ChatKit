@@ -9,8 +9,9 @@
         android:theme="@style/GreenTheme">
 
         <activity
-            android:name=".features.main.MainActivity"
-            android:theme="@style/BlueThemeNoActionBar">
+            android:name=".features.demo.styled.StyledDialogsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+           >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -27,8 +28,8 @@
             android:theme="@style/BlueTheme"/>
         <activity
             android:name=".features.demo.styled.StyledMessagesActivity"/>
-        <activity
-            android:name=".features.demo.styled.StyledDialogsActivity"/>
+        <!--<activity
+            android:name=".features.demo.styled.StyledDialogsActivity"/>-->
         <activity
             android:name=".features.demo.custom.layout.CustomLayoutDialogsActivity"/>
         <activity
