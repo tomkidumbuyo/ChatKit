@@ -27,7 +27,8 @@
             android:name=".features.demo.def.DefaultDialogsActivity"
             android:theme="@style/BlueTheme"/>
         <activity
-            android:name=".features.demo.styled.StyledMessagesActivity"/>
+            android:name=".features.demo.styled.StyledMessagesActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <!--<activity
             android:name=".features.demo.styled.StyledDialogsActivity"/>-->
         <activity

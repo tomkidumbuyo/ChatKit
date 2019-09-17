@@ -5,7 +5,79 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2c3e50"
+        android:id="@+id/chat_header">
+
+        <ImageButton
+            android:id="@+id/chat_search_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:tint="#fff"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@+id/chat_menu_buttons"
+            android:layout_toRightOf="@+id/chat_search_button"
+            android:gravity="center"
+            android:text="Chat"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/chat_menu_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/chat_call_button"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:src="@drawable/ic_call_black_24dp"
+                android:tint="#fff" />
+
+            <ImageButton
+                android:id="@+id/chat_video_button"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:src="@drawable/ic_videocam_black_24dp"
+                android:tint="#fff" />
+
+            <ImageButton
+                android:id="@+id/chat_menu_button"
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:tint="#fff" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
     <com.stfalcon.chatkit.messages.MessagesList
+        android:layout_marginTop="50dp"
         android:id="@+id/messagesList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

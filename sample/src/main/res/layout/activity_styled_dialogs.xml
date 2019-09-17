@@ -8,6 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="#2c3e50"
         android:id="@+id/chat_header">
 
         <ImageButton
@@ -15,6 +16,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="5dp"
+            android:tint="#fff"
             android:src="@drawable/ic_search_black_24dp"
             android:layout_alignParentLeft="true"
             android:background="@null"/>
@@ -26,6 +28,7 @@
             android:layout_toRightOf="@+id/chat_search_button"
             android:gravity="center"
             android:text="Chat"
+            android:textColor="#fff"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -35,6 +38,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="5dp"
+            android:tint="#fff"
             android:src="@drawable/ic_more_vert_black_24dp"
             android:layout_alignParentRight="true"
             android:background="@null"/>
