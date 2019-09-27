@@ -76,6 +76,7 @@
 
     </RelativeLayout>
 
+
     <com.stfalcon.chatkit.messages.MessagesList
         android:layout_marginTop="50dp"
         android:id="@+id/messagesList"

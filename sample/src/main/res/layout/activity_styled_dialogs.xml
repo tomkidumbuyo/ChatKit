@@ -45,10 +45,22 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1e272e"
+        android:id="@+id/chat_sub_header">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </RelativeLayout>
+
     <com.stfalcon.chatkit.dialogs.DialogsList
         android:id="@+id/dialogsList"
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_height="match_parent"
         app:dialogDividerLeftPadding="0dp"
         app:dialogMessageTextSize="17sp"

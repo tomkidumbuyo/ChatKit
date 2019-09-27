@@ -15,6 +15,7 @@ import com.stfalcon.chatkit.messages.MessagesListAdapter;
 import com.stfalcon.chatkit.sample.R;
 import com.stfalcon.chatkit.sample.common.data.fixtures.MessagesFixtures;
 import com.stfalcon.chatkit.sample.common.data.model.Message;
+import com.stfalcon.chatkit.sample.features.demo.styled.SectionsPageAdapter;
 import com.stfalcon.chatkit.sample.utils.AppUtils;
 
 import java.text.SimpleDateFormat;
@@ -28,6 +29,8 @@ import java.util.Locale;
 public abstract class DemoMessagesActivity extends AppCompatActivity
         implements MessagesListAdapter.SelectionListener,
         MessagesListAdapter.OnLoadMoreListener {
+
+
 
     private static final int TOTAL_MESSAGES_COUNT = 100;
 
